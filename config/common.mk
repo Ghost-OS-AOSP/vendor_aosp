@@ -150,6 +150,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     pm.dexopt.ab-ota=quicken
 endif
 
+# Flatten APEXs for performance
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
